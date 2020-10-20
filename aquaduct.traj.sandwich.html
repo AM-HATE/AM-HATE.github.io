@@ -1,0 +1,133 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aquaduct.traj.sandwich module &#8212; Aqua-Duct 1.0.10 documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="shortcut icon" href="_static/ficon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="aquaduct.utils package" href="aquaduct.utils.html" />
+    <link rel="prev" title="aquaduct.traj.paths module" href="aquaduct.traj.paths.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.utils.html" title="aquaduct.utils package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.traj.paths.html" title="aquaduct.traj.paths module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Aqua-Duct 1.0.10 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >aquaduct</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="aquaduct.html" >aquaduct package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="aquaduct.traj.html" accesskey="U">aquaduct.traj package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">aquaduct.traj.sandwich module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-aquaduct.traj.sandwich">
+<span id="aquaduct-traj-sandwich-module"></span><h1>aquaduct.traj.sandwich module<a class="headerlink" href="#module-aquaduct.traj.sandwich" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="aquaduct.traj.sandwich.OpenReaderTraj">
+<em class="property">class </em><code class="sig-name descname">OpenReaderTraj</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">topology</span></em>, <em class="sig-param"><span class="n">trajectory</span></em>, <em class="sig-param"><span class="n">number</span></em>, <em class="sig-param"><span class="n">window</span></em>, <em class="sig-param"><span class="n">engine</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/traj/sandwich.html#OpenReaderTraj"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.traj.sandwich.OpenReaderTraj" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#aquaduct.traj.sandwich.OpenReaderTraj" title="aquaduct.traj.sandwich.OpenReaderTraj"><code class="xref py py-class docutils literal notranslate"><span class="pre">aquaduct.traj.sandwich.OpenReaderTraj</span></code></a></p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="aquaduct.traj.sandwich.VdW_radii">
+<code class="sig-name descname">VdW_radii</code><em class="property"> = {'ac': 2.47, 'ag': 2.11, 'al': 1.84, 'am': 2.44, 'ar': 1.88, 'as': 1.85, 'at': 2.02, 'au': 2.14, 'b': 1.92, 'ba': 2.68, 'be': 1.53, 'bi': 2.07, 'bk': 2.44, 'br': 1.85, 'c': 1.7, 'ca': 2.31, 'cd': 2.18, 'ce': 2.42, 'cf': 2.45, 'cl': 1.75, 'cm': 2.45, 'co': 2.0, 'cr': 2.06, 'cs': 3.43, 'cu': 1.96, 'dy': 2.31, 'er': 2.29, 'es': 2.45, 'eu': 2.35, 'f': 1.47, 'fe': 2.04, 'fm': 2.45, 'fr': 3.48, 'ga': 1.87, 'gd': 2.34, 'ge': 2.11, 'h': 1.1, 'he': 1.4, 'hf': 2.23, 'hg': 2.23, 'ho': 2.3, 'i': 1.98, 'in': 1.93, 'ir': 2.13, 'k': 2.75, 'kr': 2.02, 'la': 2.43, 'li': 1.82, 'lr': 2.46, 'lu': 2.24, 'md': 2.46, 'mg': 1.73, 'mn': 2.05, 'mo': 2.17, 'n': 1.55, 'na': 2.27, 'nb': 2.18, 'nd': 2.39, 'ne': 1.54, 'ni': 1.97, 'no': 2.46, 'np': 2.39, 'o': 1.52, 'os': 2.16, 'p': 1.8, 'pa': 2.43, 'pb': 2.02, 'pd': 2.1, 'pm': 2.38, 'po': 1.97, 'pr': 2.4, 'pt': 2.13, 'pu': 2.43, 'ra': 2.83, 'rb': 3.03, 're': 2.16, 'rh': 2.1, 'rn': 2.2, 'ru': 2.13, 's': 1.8, 'sb': 2.06, 'sc': 2.15, 'se': 1.9, 'si': 2.1, 'sm': 2.36, 'sn': 2.17, 'sr': 2.49, 'ta': 2.22, 'tb': 2.33, 'tc': 2.16, 'te': 2.06, 'th': 2.45, 'ti': 2.11, 'tl': 1.96, 'tm': 2.27, 'u': 2.41, 'v': 2.07, 'w': 2.18, 'xe': 2.16, 'y': 2.32, 'yb': 2.26, 'zn': 2.01, 'zr': 2.23}</em><a class="headerlink" href="#aquaduct.traj.sandwich.VdW_radii" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary of VdW radii.</p>
+<p>Data taken from L. M. Mentel, mendeleev, 2014. Available at: <a class="reference external" href="https://bitbucket.org/lukaszmentel/mendeleev">https://bitbucket.org/lukaszmentel/mendeleev</a>.
+Package <strong>mendeleev</strong> is not used because it depends on too many other libraries.</p>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/AQUADUCT_LOGO.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="aquaduct.traj.paths.html"
+                        title="previous chapter">aquaduct.traj.paths module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="aquaduct.utils.html"
+                        title="next chapter">aquaduct.utils package</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.utils.html" title="aquaduct.utils package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.traj.paths.html" title="aquaduct.traj.paths module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Aqua-Duct 1.0.10 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >aquaduct</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="aquaduct.html" >aquaduct package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="aquaduct.traj.html" >aquaduct.traj package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">aquaduct.traj.sandwich module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, 2017, 2018, 2019 Tomasz Magdziarz, Karolina Mitusińska, Agata Raczyńska, Artur Góra.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

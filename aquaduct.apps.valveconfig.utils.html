@@ -1,0 +1,490 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aquaduct.apps.valveconfig.utils module &#8212; Aqua-Duct 1.0.10 documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="shortcut icon" href="_static/ficon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="aquaduct.apps.chord module" href="aquaduct.apps.chord.html" />
+    <link rel="prev" title="aquaduct.apps.valveconfig.defaults module" href="aquaduct.apps.valveconfig.defaults.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.apps.chord.html" title="aquaduct.apps.chord module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.apps.valveconfig.defaults.html" title="aquaduct.apps.valveconfig.defaults module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Aqua-Duct 1.0.10 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >aquaduct</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="aquaduct.html" >aquaduct package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="aquaduct.apps.html" >aquaduct.apps package</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="aquaduct.apps.valveconfig.html" accesskey="U">aquaduct.apps.valveconfig package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">aquaduct.apps.valveconfig.utils module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-aquaduct.apps.valveconfig.utils">
+<span id="aquaduct-apps-valveconfig-utils-module"></span><h1>aquaduct.apps.valveconfig.utils module<a class="headerlink" href="#module-aquaduct.apps.valveconfig.utils" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="aquaduct.apps.valveconfig.utils.get_widget_bg">
+<code class="sig-name descname">get_widget_bg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">widget</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#get_widget_bg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.get_widget_bg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return background color of specified widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>widget</strong> – Ttk widget.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Background color.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="aquaduct.apps.valveconfig.utils.widget_factory">
+<code class="sig-name descname">widget_factory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">default</span></em>, <em class="sig-param"><span class="n">state</span><span class="o">=</span><span class="default_value">'normal'</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#widget_factory"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.widget_factory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates widget depending on default argument.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parent</strong> – Parent of new widget.</p></li>
+<li><p><strong>default</strong> – Default widget value.</p></li>
+<li><p><strong>state</strong> – State of widget.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Widget and variable attached to it.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="aquaduct.apps.valveconfig.utils.entry_factory">
+<code class="sig-name descname">entry_factory</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">row</span></em>, <em class="sig-param"><span class="n">entry_name</span></em>, <em class="sig-param"><span class="n">default</span></em>, <em class="sig-param"><span class="n">help</span></em>, <em class="sig-param"><span class="n">state</span><span class="o">=</span><span class="default_value">'normal'</span></em>, <em class="sig-param"><span class="n">info_text</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">warning_text</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#entry_factory"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.entry_factory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines which class is used to handle specified default value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parent</strong> – Parent of widget.</p></li>
+<li><p><strong>row</strong> – Row number where first Entry will be grided.</p></li>
+<li><p><strong>entry_name</strong> – Readable entry name.</p></li>
+<li><p><strong>default</strong> – Default values of entry.</p></li>
+<li><p><strong>help</strong> – Text which will be displayed in tooltip.</p></li>
+<li><p><strong>state</strong> – State of widget.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Entry based on default value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.Text">
+<em class="property">class </em><code class="sig-name descname">Text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">textvariable</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#Text"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.Text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tkinter.Text</span></code>, <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.Entry">
+<em class="property">class </em><code class="sig-name descname">Entry</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">row</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#Entry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.Entry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Abstract class for various Entries that manage different type of default values.</p>
+<p>Represents single row of configuration option with Label and all input widgets.</p>
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.Entry.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#Entry.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.Entry.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Entry value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.Entry.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#Entry.set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.Entry.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> – New value of Entry.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.Entry.highlight">
+<code class="sig-name descname">highlight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#Entry.highlight"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.Entry.highlight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes color of input frame.</p>
+<p>Used to highlight, which required entry is unfilled.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.Entry.unhighlight">
+<code class="sig-name descname">unhighlight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#Entry.unhighlight"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.Entry.unhighlight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets entry to default color.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.StandardEntry">
+<em class="property">class </em><code class="sig-name descname">StandardEntry</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">row</span></em>, <em class="sig-param"><span class="n">entry_name_long</span></em>, <em class="sig-param"><span class="n">default</span></em>, <em class="sig-param"><span class="n">help</span></em>, <em class="sig-param"><span class="n">state</span></em>, <em class="sig-param"><span class="n">info_text</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">warning_text</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#StandardEntry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.StandardEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#aquaduct.apps.valveconfig.utils.Entry" title="aquaduct.apps.valveconfig.utils.Entry"><code class="xref py py-class docutils literal notranslate"><span class="pre">aquaduct.apps.valveconfig.utils.Entry</span></code></a></p>
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.StandardEntry.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#StandardEntry.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.StandardEntry.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Entry value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.StandardEntry.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#StandardEntry.set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.StandardEntry.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> – New value of Entry.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.BoolEntry">
+<em class="property">class </em><code class="sig-name descname">BoolEntry</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">row</span></em>, <em class="sig-param"><span class="n">entry_name_long</span></em>, <em class="sig-param"><span class="n">input_default</span></em>, <em class="sig-param"><span class="n">control_default</span></em>, <em class="sig-param"><span class="n">help</span></em>, <em class="sig-param"><span class="n">info_text</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">warning_text</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#BoolEntry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.BoolEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#aquaduct.apps.valveconfig.utils.Entry" title="aquaduct.apps.valveconfig.utils.Entry"><code class="xref py py-class docutils literal notranslate"><span class="pre">aquaduct.apps.valveconfig.utils.Entry</span></code></a></p>
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.BoolEntry.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#BoolEntry.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.BoolEntry.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If Checkbox is checked it return input widget value, otherwise False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.BoolEntry.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#BoolEntry.set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.BoolEntry.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> – Value that input widget will be set too.</p>
+</dd>
+</dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/kara/Desktop/AQ/aqua-duct/src/aquaduct/apps/valveconfig/utils.py:docstring of aquaduct.apps.valveconfig.utils.BoolEntry.set</span>, line 4)</p>
+<p>Field list ends without a blank line; unexpected unindent.</p>
+</div>
+<p>If False it will set only Checkbox value to False and input widget to “”.
+If value have str type it will set Checkbox to True and input widget to that value.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.FileEntry">
+<em class="property">class </em><code class="sig-name descname">FileEntry</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">row</span></em>, <em class="sig-param"><span class="n">entry_name_long</span></em>, <em class="sig-param"><span class="n">default</span></em>, <em class="sig-param"><span class="n">help</span></em>, <em class="sig-param"><span class="n">info_text</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">warning_text</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#FileEntry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.FileEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#aquaduct.apps.valveconfig.utils.Entry" title="aquaduct.apps.valveconfig.utils.Entry"><code class="xref py py-class docutils literal notranslate"><span class="pre">aquaduct.apps.valveconfig.utils.Entry</span></code></a></p>
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.FileEntry.callback_load_file">
+<code class="sig-name descname">callback_load_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">e</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#FileEntry.callback_load_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.FileEntry.callback_load_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Callback for selecting file.</p>
+<p>Sets widget content to loaded file name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.FileEntry.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#FileEntry.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.FileEntry.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Entry value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.FileEntry.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#FileEntry.set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.FileEntry.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> – New value of Entry.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.ManyFileEntry">
+<em class="property">class </em><code class="sig-name descname">ManyFileEntry</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">row</span></em>, <em class="sig-param"><span class="n">entry_name_long</span></em>, <em class="sig-param"><span class="n">default</span></em>, <em class="sig-param"><span class="n">help</span></em>, <em class="sig-param"><span class="n">info_text</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">warning_text</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#ManyFileEntry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.ManyFileEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#aquaduct.apps.valveconfig.utils.Entry" title="aquaduct.apps.valveconfig.utils.Entry"><code class="xref py py-class docutils literal notranslate"><span class="pre">aquaduct.apps.valveconfig.utils.Entry</span></code></a></p>
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.ManyFileEntry.append_entry">
+<code class="sig-name descname">append_entry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#ManyFileEntry.append_entry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.ManyFileEntry.append_entry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates new entry with input widget and load button</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.ManyFileEntry.callback_load_file">
+<code class="sig-name descname">callback_load_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#ManyFileEntry.callback_load_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.ManyFileEntry.callback_load_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Callback for selecting file.</p>
+<p>Appends loaded file name at the end of Text widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>index</strong> – Index of variable in self.input_vars</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.ManyFileEntry.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#ManyFileEntry.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.ManyFileEntry.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Entry value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.ManyFileEntry.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#ManyFileEntry.set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.ManyFileEntry.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets Entry value.</p>
+<p>If value is set to “” it deletes all input widgets, except first and sets it to “”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> – New value. It can be single path or paths separated by os.pathsep.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.ManyFileEntry.highlight">
+<code class="sig-name descname">highlight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#ManyFileEntry.highlight"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.ManyFileEntry.highlight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes color of input frame.</p>
+<p>Used to highlight, which required entry is unfilled.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.ManyFileEntry.unhighlight">
+<code class="sig-name descname">unhighlight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#ManyFileEntry.unhighlight"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.ManyFileEntry.unhighlight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets entry to default color.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.DirEntry">
+<em class="property">class </em><code class="sig-name descname">DirEntry</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">row</span></em>, <em class="sig-param"><span class="n">entry_name_long</span></em>, <em class="sig-param"><span class="n">default</span></em>, <em class="sig-param"><span class="n">help</span></em>, <em class="sig-param"><span class="n">info_text</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">warning_text</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#DirEntry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.DirEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#aquaduct.apps.valveconfig.utils.Entry" title="aquaduct.apps.valveconfig.utils.Entry"><code class="xref py py-class docutils literal notranslate"><span class="pre">aquaduct.apps.valveconfig.utils.Entry</span></code></a></p>
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.DirEntry.callback_load_dir">
+<code class="sig-name descname">callback_load_dir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">e</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#DirEntry.callback_load_dir"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.DirEntry.callback_load_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Callback for selecting dir.</p>
+<p>Sets widget content to loaded dir name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.DirEntry.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#DirEntry.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.DirEntry.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Entry value.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.DirEntry.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#DirEntry.set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.DirEntry.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> – New value of Entry.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.ParenthesedEntry">
+<em class="property">class </em><code class="sig-name descname">ParenthesedEntry</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">row</span></em>, <em class="sig-param"><span class="n">entry_name_long</span></em>, <em class="sig-param"><span class="n">input_default</span></em>, <em class="sig-param"><span class="n">control_default</span></em>, <em class="sig-param"><span class="n">help</span></em>, <em class="sig-param"><span class="n">info_text</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">warning_text</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#ParenthesedEntry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.ParenthesedEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#aquaduct.apps.valveconfig.utils.Entry" title="aquaduct.apps.valveconfig.utils.Entry"><code class="xref py py-class docutils literal notranslate"><span class="pre">aquaduct.apps.valveconfig.utils.Entry</span></code></a></p>
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.ParenthesedEntry.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#ParenthesedEntry.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.ParenthesedEntry.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Value of Entry widget and value of second Entry in parentheses, eg. Value1(Value2).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.ParenthesedEntry.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#ParenthesedEntry.set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.ParenthesedEntry.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets Entry value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> – First value and second value in parentheses or without second value and parentheses.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.WarningIconWidget">
+<em class="property">class </em><code class="sig-name descname">WarningIconWidget</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#WarningIconWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.WarningIconWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tkinter.ttk.Label</span></code>, <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.InfoIconWidget">
+<em class="property">class </em><code class="sig-name descname">InfoIconWidget</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#InfoIconWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.InfoIconWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tkinter.ttk.Label</span></code>, <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.HidingFrame">
+<em class="property">class </em><code class="sig-name descname">HidingFrame</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="n">row</span></em>, <em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#HidingFrame"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.HidingFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tkinter.ttk.Frame</span></code>, <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt id="aquaduct.apps.valveconfig.utils.HidingFrame.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#HidingFrame.show"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.HidingFrame.show" title="Permalink to this definition">¶</a></dt>
+<dd><p>Method to grid Frame with predefinied configuration.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.ToolTip">
+<em class="property">class </em><code class="sig-name descname">ToolTip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">widget</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#ToolTip"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.ToolTip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Code found: <a class="reference external" href="http://www.voidspace.org.uk/python/weblog/arch_d7_2006_07_01.shtml">http://www.voidspace.org.uk/python/weblog/arch_d7_2006_07_01.shtml</a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.apps.valveconfig.utils.VerticalScrolledFrame">
+<em class="property">class </em><code class="sig-name descname">VerticalScrolledFrame</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kw</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/apps/valveconfig/utils.html#VerticalScrolledFrame"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.apps.valveconfig.utils.VerticalScrolledFrame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tkinter.Frame</span></code></p>
+<p>A pure Tkinter scrollable frame that actually works!
+* Use the ‘interior’ attribute to place widgets inside the scrollable frame
+* Construct and pack/place/grid normally
+* This frame only allows vertical scrolling</p>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/AQUADUCT_LOGO.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="aquaduct.apps.valveconfig.defaults.html"
+                        title="previous chapter">aquaduct.apps.valveconfig.defaults module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="aquaduct.apps.chord.html"
+                        title="next chapter">aquaduct.apps.chord module</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.apps.chord.html" title="aquaduct.apps.chord module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.apps.valveconfig.defaults.html" title="aquaduct.apps.valveconfig.defaults module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Aqua-Duct 1.0.10 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >aquaduct</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="aquaduct.html" >aquaduct package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="aquaduct.apps.html" >aquaduct.apps package</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="aquaduct.apps.valveconfig.html" >aquaduct.apps.valveconfig package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">aquaduct.apps.valveconfig.utils module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, 2017, 2018, 2019 Tomasz Magdziarz, Karolina Mitusińska, Agata Raczyńska, Artur Góra.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

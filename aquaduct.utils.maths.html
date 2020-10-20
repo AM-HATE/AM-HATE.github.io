@@ -1,0 +1,240 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aquaduct.utils.maths module &#8212; Aqua-Duct 1.0.10 documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="shortcut icon" href="_static/ficon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="aquaduct.utils.multip module" href="aquaduct.utils.multip.html" />
+    <link rel="prev" title="aquaduct.utils.helpers module" href="aquaduct.utils.helpers.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.utils.multip.html" title="aquaduct.utils.multip module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.utils.helpers.html" title="aquaduct.utils.helpers module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Aqua-Duct 1.0.10 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >aquaduct</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="aquaduct.html" >aquaduct package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="aquaduct.utils.html" accesskey="U">aquaduct.utils package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">aquaduct.utils.maths module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-aquaduct.utils.maths">
+<span id="aquaduct-utils-maths-module"></span><h1>aquaduct.utils.maths module<a class="headerlink" href="#module-aquaduct.utils.maths" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="aquaduct.utils.maths.NumpyDefaultsStorageTypes">
+<em class="property">class </em><code class="sig-name descname">NumpyDefaultsStorageTypes</code><a class="reference internal" href="_modules/aquaduct/utils/maths.html#NumpyDefaultsStorageTypes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.utils.maths.NumpyDefaultsStorageTypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Default types that are enforced in <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.19)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a> objects.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is used only througt <a class="reference internal" href="#aquaduct.utils.maths.defaults" title="aquaduct.utils.maths.defaults"><code class="xref py py-attr docutils literal notranslate"><span class="pre">defaults</span></code></a> instance.</p>
+</div>
+<dl class="py attribute">
+<dt id="aquaduct.utils.maths.NumpyDefaultsStorageTypes.float_default">
+<code class="sig-name descname">float_default</code><a class="headerlink" href="#aquaduct.utils.maths.NumpyDefaultsStorageTypes.float_default" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.float64</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="aquaduct.utils.maths.NumpyDefaultsStorageTypes.int_default">
+<code class="sig-name descname">int_default</code><a class="headerlink" href="#aquaduct.utils.maths.NumpyDefaultsStorageTypes.int_default" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.int64</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="aquaduct.utils.maths.NumpyDefaultsStorageTypes.int_type">
+<code class="sig-name descname">int_type</code><a class="headerlink" href="#aquaduct.utils.maths.NumpyDefaultsStorageTypes.int_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.int8</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py data">
+<dt id="aquaduct.utils.maths.defaults">
+<code class="sig-name descname">defaults</code><em class="property"> = &lt;aquaduct.utils.maths.NumpyDefaultsStorageTypes object&gt;</em><a class="headerlink" href="#aquaduct.utils.maths.defaults" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instance of <a class="reference internal" href="#aquaduct.utils.maths.NumpyDefaultsStorageTypes" title="aquaduct.utils.maths.NumpyDefaultsStorageTypes"><code class="xref py py-class docutils literal notranslate"><span class="pre">NumpyDefaultsStorageTypes</span></code></a> to store default values.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="aquaduct.utils.maths.make_default_array">
+<code class="sig-name descname">make_default_array</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">array_like</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/utils/maths.html#make_default_array"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.utils.maths.make_default_array" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>array_like</strong> – Array like object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Array with dtype set to <a class="reference internal" href="#aquaduct.utils.maths.NumpyDefaultsStorageTypes.float_default" title="aquaduct.utils.maths.NumpyDefaultsStorageTypes.float_default"><code class="xref py py-attr docutils literal notranslate"><span class="pre">NumpyDefaultsStorageTypes.float_default</span></code></a>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.utils.maths.MemMap">
+<em class="property">class </em><code class="sig-name descname">MemMap</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">dtype</span></em>, <em class="sig-param"><span class="n">shape</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/utils/maths.html#MemMap"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.utils.maths.MemMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#aquaduct.utils.maths.MemMap" title="aquaduct.utils.maths.MemMap"><code class="xref py py-class docutils literal notranslate"><span class="pre">aquaduct.utils.maths.MemMap</span></code></a></p>
+<p>Provides simple convenience wrapper for <code class="xref py py-func docutils literal notranslate"><span class="pre">numpy.memmap()</span></code>.</p>
+<dl class="py method">
+<dt id="aquaduct.utils.maths.MemMap.readonly">
+<code class="sig-name descname">readonly</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/utils/maths.html#MemMap.readonly"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.utils.maths.MemMap.readonly" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Memory map object in ‘r’ mode.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>numpy.core.memmap.memmap</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.utils.maths.MemMap.readwrite">
+<code class="sig-name descname">readwrite</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/utils/maths.html#MemMap.readwrite"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.utils.maths.MemMap.readwrite" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Memory map object in ‘r+’ mode.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>numpy.core.memmap.memmap</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.utils.maths.ArrayOrArray">
+<em class="property">class </em><code class="sig-name descname">ArrayOrArray</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dtype</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">shape</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/utils/maths.html#ArrayOrArray"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.utils.maths.ArrayOrArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Convenience class for handling <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.19)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a> and <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.core.memmap.memmap</span></code> objects in a transparent way.</p>
+<dl class="py method">
+<dt id="aquaduct.utils.maths.ArrayOrArray.isndarray">
+<em class="property">property </em><code class="sig-name descname">isndarray</code><a class="headerlink" href="#aquaduct.utils.maths.ArrayOrArray.isndarray" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><cite>True</cite> if underlaying object is of <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.19)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a> type.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.utils.maths.ArrayOrArray.readwrite">
+<code class="sig-name descname">readwrite</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/utils/maths.html#ArrayOrArray.readwrite"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.utils.maths.ArrayOrArray.readwrite" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Array with read-write access.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.utils.maths.ArrayOrArray.readonly">
+<code class="sig-name descname">readonly</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/utils/maths.html#ArrayOrArray.readonly"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.utils.maths.ArrayOrArray.readonly" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Array with read only access, if possible</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/AQUADUCT_LOGO.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="aquaduct.utils.helpers.html"
+                        title="previous chapter">aquaduct.utils.helpers module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="aquaduct.utils.multip.html"
+                        title="next chapter">aquaduct.utils.multip module</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.utils.multip.html" title="aquaduct.utils.multip module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.utils.helpers.html" title="aquaduct.utils.helpers module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Aqua-Duct 1.0.10 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >aquaduct</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="aquaduct.html" >aquaduct package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="aquaduct.utils.html" >aquaduct.utils package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">aquaduct.utils.maths module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, 2017, 2018, 2019 Tomasz Magdziarz, Karolina Mitusińska, Agata Raczyńska, Artur Góra.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

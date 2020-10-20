@@ -1,0 +1,260 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aquaduct.geom.pocket module &#8212; Aqua-Duct 1.0.10 documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="shortcut icon" href="_static/ficon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="aquaduct.geom.smooth module" href="aquaduct.geom.smooth.html" />
+    <link rel="prev" title="aquaduct.geom.pca module" href="aquaduct.geom.pca.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.geom.smooth.html" title="aquaduct.geom.smooth module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.geom.pca.html" title="aquaduct.geom.pca module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Aqua-Duct 1.0.10 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >aquaduct</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="aquaduct.html" >aquaduct package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="aquaduct.geom.html" accesskey="U">aquaduct.geom package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">aquaduct.geom.pocket module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-aquaduct.geom.pocket">
+<span id="aquaduct-geom-pocket-module"></span><h1>aquaduct.geom.pocket module<a class="headerlink" href="#module-aquaduct.geom.pocket" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="aquaduct.geom.pocket.get_spc">
+<code class="sig-name descname">get_spc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sp</span></em>, <em class="sig-param"><span class="n">window</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/pocket.html#get_spc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.pocket.get_spc" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sp</strong> – Single path like object or Generic path.</p></li>
+<li><p><strong>window</strong> (<em>tuple</em>) – Optional frames window.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.19)">numpy.ndarray</a></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Coordinates of path; to be used in pocket calculation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="aquaduct.geom.pocket.find_minmax">
+<code class="sig-name descname">find_minmax</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spaths</span></em>, <em class="sig-param"><span class="n">pbar</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/pocket.html#find_minmax"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.pocket.find_minmax" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>spaths</strong> (<em>list</em>) – List of single like path objects.</p></li>
+<li><p><strong>pbar</strong> – Optional progress object providing next() method.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>2 element tuple of numpy.ndarray each of shape (3,)</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Minimal and maximal boundaries of coordinates used in pocket calulations of spaths.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="aquaduct.geom.pocket.find_minmax_map">
+<code class="sig-name descname">find_minmax_map</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spaths</span></em>, <em class="sig-param"><span class="n">pbar</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">map_fun</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/pocket.html#find_minmax_map"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.pocket.find_minmax_map" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>spaths</strong> (<em>list</em>) – List of single like path objects.</p></li>
+<li><p><strong>pbar</strong> – Optional progress object providing next() method.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>2 element tuple of numpy.ndarray each of shape (3,)</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Minimal and maximal boundaries of coordinates used in pocket calulations of spaths.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="aquaduct.geom.pocket.find_edges">
+<code class="sig-name descname">find_edges</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spaths</span></em>, <em class="sig-param"><span class="n">grid_size</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">pbar</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">map_fun</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/pocket.html#find_edges"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.pocket.find_edges" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>spaths</strong> (<em>list</em>) – List of single like path objects.</p></li>
+<li><p><strong>grid_size</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – Size of grid cell in A.</p></li>
+<li><p><strong>pbar</strong> – Optional progress object providing next() method.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list of numpy.ndarrays</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Edges of bins of grid spanning all submited paths.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="aquaduct.geom.pocket.distribution">
+<code class="sig-name descname">distribution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spaths</span></em>, <em class="sig-param"><span class="n">grid_size</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">edges</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">window</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">pbar</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">map_fun</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/pocket.html#distribution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.pocket.distribution" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>spaths</strong> (<em>list</em>) – List of single like path objects.</p></li>
+<li><p><strong>grid_size</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – Size of grid cell in A.</p></li>
+<li><p><strong>of numpy.ndarrays edges</strong> (<em>list</em>) – Edges of bins of grid spanning all submited paths.</p></li>
+<li><p><strong>window</strong> (<em>tuple</em>) – Optional frames window.</p></li>
+<li><p><strong>pbar</strong> – Optional progress object providing next() method.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/kara/Desktop/AQ/aqua-duct/src/aquaduct/geom/pocket.py:docstring of aquaduct.geom.pocket.distribution</span>, line 6)</p>
+<p>Field list ends without a blank line; unexpected unindent.</p>
+</div>
+<p>:rtype tuple of numpy.ndarrays
+:return: Coordinates of pocket and number of points.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="aquaduct.geom.pocket.outer_inner">
+<code class="sig-name descname">outer_inner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">H</span></em>, <em class="sig-param"><span class="n">threshold</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/pocket.html#outer_inner"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.pocket.outer_inner" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>H</strong> (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.19)"><em>numpy.ndarray</em></a>) – Pocket distribution.</p></li>
+<li><p><strong>threshold</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – Percent value of max density which will be used to partition pocket into inner and outer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Indices of outer and inner pocket.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple of numpy.ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="aquaduct.geom.pocket.sphere_density_raw">
+<code class="sig-name descname">sphere_density_raw</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">trajs</span></em>, <em class="sig-param"><span class="n">mol_name</span></em>, <em class="sig-param"><span class="n">centers</span></em>, <em class="sig-param"><span class="n">radius</span></em>, <em class="sig-param"><span class="n">pool</span></em>, <em class="sig-param"><span class="n">window</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">pbar</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/pocket.html#sphere_density_raw"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.pocket.sphere_density_raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate density of sphere with specified radius and with center in each point.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>trajs</strong> (class:<cite>aquaduct.sandwich.ReaderTraj</cite>) – Collection of trajectory readers</p></li>
+<li><p><strong>mol_name</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – Name of molecule which amount will be calculated around points.</p></li>
+<li><p><strong>radius</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#float" title="(in Python v2.7)"><em>float</em></a>) – Radius of selection for each point.</p></li>
+<li><p><strong>centers</strong> (<em>Iterator</em>) – Points of path</p></li>
+<li><p><strong>pool</strong> (<em>Preconfigured Pool instance</em>) – Preconfigured Pool instance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Density for each center.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.19)">numpy.ndarray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/AQUADUCT_LOGO.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="aquaduct.geom.pca.html"
+                        title="previous chapter">aquaduct.geom.pca module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="aquaduct.geom.smooth.html"
+                        title="next chapter">aquaduct.geom.smooth module</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.geom.smooth.html" title="aquaduct.geom.smooth module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.geom.pca.html" title="aquaduct.geom.pca module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Aqua-Duct 1.0.10 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >aquaduct</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="aquaduct.html" >aquaduct package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="aquaduct.geom.html" >aquaduct.geom package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">aquaduct.geom.pocket module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, 2017, 2018, 2019 Tomasz Magdziarz, Karolina Mitusińska, Agata Raczyńska, Artur Góra.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

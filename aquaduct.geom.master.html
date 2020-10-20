@@ -1,0 +1,348 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aquaduct.geom.master module &#8212; Aqua-Duct 1.0.10 documentation</title>
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="shortcut icon" href="_static/ficon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="aquaduct.geom.pca module" href="aquaduct.geom.pca.html" />
+    <link rel="prev" title="aquaduct.geom.hdr_contour module" href="aquaduct.geom.hdr_contour.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.geom.pca.html" title="aquaduct.geom.pca module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.geom.hdr_contour.html" title="aquaduct.geom.hdr_contour module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Aqua-Duct 1.0.10 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >aquaduct</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="aquaduct.html" >aquaduct package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="aquaduct.geom.html" accesskey="U">aquaduct.geom package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">aquaduct.geom.master module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-aquaduct.geom.master">
+<span id="aquaduct-geom-master-module"></span><h1>aquaduct.geom.master module<a class="headerlink" href="#module-aquaduct.geom.master" title="Permalink to this headline">¶</a></h1>
+<dl class="py data">
+<dt id="aquaduct.geom.master.part2type_dict">
+<code class="sig-name descname">part2type_dict</code><em class="property"> = {0: 9, 1: 8, 2: 9}</em><a class="headerlink" href="#aquaduct.geom.master.part2type_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Part number to <code class="xref py py-class docutils literal notranslate"><span class="pre">GenericPathTypeCodes</span></code> dictionary.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="aquaduct.geom.master.parts">
+<code class="sig-name descname">parts</code><em class="property"> = (0, 1, 2)</em><a class="headerlink" href="#aquaduct.geom.master.parts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parts enumerate.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.geom.master.CTypeSpathsCollectionWorker">
+<em class="property">class </em><code class="sig-name descname">CTypeSpathsCollectionWorker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spaths</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ctype</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">bias_long</span><span class="o">=</span><span class="default_value">5</span></em>, <em class="sig-param"><span class="n">smooth</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">lock</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollectionWorker"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollectionWorker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Worker class for averaging spaths in points of master path.</p>
+<dl class="py method">
+<dt id="aquaduct.geom.master.CTypeSpathsCollectionWorker.coords_types_prob_widths">
+<code class="sig-name descname">coords_types_prob_widths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sp_slices_</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollectionWorker.coords_types_prob_widths"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollectionWorker.coords_types_prob_widths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates average coordinates, type and width in given chunk.</p>
+<p>Parameter <code class="xref py py-attr docutils literal notranslate"><span class="pre">sp_slices_</span></code> is tuple of length equal to number of spaths.
+It contains slices for all spaths respectively. With these slices spaths are cut and <strong>only</strong>
+resulting chunks are used for calculations.</p>
+<p>Therefore, this method average spaths in one point of master math. This point is defined by slices submitted as
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">sp_lices_</span></code> parameter.</p>
+<p>Algorithm of averaging (within current chunks of spaths):</p>
+<ol class="arabic">
+<li><p>Coordinates for all spaths are collected.</p></li>
+<li><p>Lengths of all spaths are collected (from cached variables) and kept as lists of lengths equal to
+chunks’ sizes.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lengths of collected lengths of spaths are of the same size as coordinates</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>New coordinates are calculated as weighted average of collected coordintates with <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.average.html#numpy.average" title="(in NumPy v1.19)"><code class="xref py py-func docutils literal notranslate"><span class="pre">numpy.average()</span></code></a>.
+As weights collected lengths are used.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Function <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.average.html#numpy.average" title="(in NumPy v1.19)"><code class="xref py py-func docutils literal notranslate"><span class="pre">numpy.average()</span></code></a> is called with flatten coordinates and lengths.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Width of average path is calculated as mean value of flatten coordinates mutual distances.</p></li>
+<li><p>Type of average paths is calculated as probability (frequency) of
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">scope_name</span></code>.</p></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>sp_slices</strong> (<em>tuple</em>) – Slices that cut chunks from all paths.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>3 element tuple</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>coordinates, type (frequency), and width of averaged spaths in current point</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="aquaduct.geom.master.CTypeSpathsCollection">
+<em class="property">class </em><code class="sig-name descname">CTypeSpathsCollection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spaths</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ctype</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">bias_long</span><span class="o">=</span><span class="default_value">5</span></em>, <em class="sig-param"><span class="n">pbar</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">threads</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Object for grouping separate paths that belong to the same CType.
+Method <a class="reference internal" href="#aquaduct.geom.master.CTypeSpathsCollection.get_master_path" title="aquaduct.geom.master.CTypeSpathsCollection.get_master_path"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_master_path()</span></code></a> allows for calculation of average path.</p>
+<dl class="py attribute">
+<dt id="aquaduct.geom.master.CTypeSpathsCollection.parts">
+<code class="sig-name descname">parts</code><em class="property"> = (0, 1, 2)</em><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollection.parts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enumeration of spath parts.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.geom.master.CTypeSpathsCollection.beat">
+<code class="sig-name descname">beat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollection.beat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollection.beat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Touch progress bar, if any.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.geom.master.CTypeSpathsCollection.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollection.update"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollection.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update progres bar by one, if any.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.geom.master.CTypeSpathsCollection.lens">
+<code class="sig-name descname">lens</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollection.lens"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollection.lens" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns total lengths of all paths.</p>
+<p>If ctype in #:# and not 0 and not None then take length of <cite>object</cite> part only.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Total (or <cite>object</cite> part) lengths of all paths.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.19)">numpy.ndarray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.geom.master.CTypeSpathsCollection.lens_norm">
+<code class="sig-name descname">lens_norm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollection.lens_norm"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollection.lens_norm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns normalized lengths calculated by <a class="reference internal" href="#aquaduct.geom.master.CTypeSpathsCollection.lens" title="aquaduct.geom.master.CTypeSpathsCollection.lens"><code class="xref py py-meth docutils literal notranslate"><span class="pre">lens()</span></code></a>.</p>
+<p>Applied normalization is twofold:</p>
+<ol class="arabic simple">
+<li><p>All lengths are divided by maximal length, and</p></li>
+<li><p>All lengths are subjected to <a class="reference external" href="https://docs.python.org/2/library/functions.html#pow" title="(in Python v2.7)"><code class="xref py py-func docutils literal notranslate"><span class="pre">pow()</span></code></a> function with p = <code class="xref py py-attr docutils literal notranslate"><span class="pre">bias_long</span></code>.</p></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Normalized total (or <cite>object</cite> part) lengths of all paths.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.19)">numpy.ndarray</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.geom.master.CTypeSpathsCollection.lens_real">
+<code class="sig-name descname">lens_real</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollection.lens_real"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollection.lens_real" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns real lengths of all paths.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Sizes of all paths.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.geom.master.CTypeSpathsCollection.full_size">
+<code class="sig-name descname">full_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollection.full_size"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollection.full_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns desired size of master path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Size of master path.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.geom.master.CTypeSpathsCollection.simple_types_distribution">
+<em class="property">static </em><code class="sig-name descname">simple_types_distribution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">types</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollection.simple_types_distribution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollection.simple_types_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates normalized sizes of incoming, object, and outgoing parts of spath using generic types.</p>
+<p>It is assumed that spath has object part.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>types</strong> (<em>list</em>) – List of generic types.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>3 element list</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Normalized sizes of incomin, object, and outgoing parts.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.geom.master.CTypeSpathsCollection.types_distribution">
+<code class="sig-name descname">types_distribution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollection.types_distribution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollection.types_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.matrix.html#numpy.matrix" title="(in NumPy v1.19)">numpy.matrix</a></p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>median values of <a class="reference internal" href="#aquaduct.geom.master.CTypeSpathsCollection.simple_types_distribution" title="aquaduct.geom.master.CTypeSpathsCollection.simple_types_distribution"><code class="xref py py-meth docutils literal notranslate"><span class="pre">simple_types_distribution()</span></code></a> for all spaths.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.geom.master.CTypeSpathsCollection.types_prob_to_types">
+<code class="sig-name descname">types_prob_to_types</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">types_prob</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollection.types_prob_to_types"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollection.types_prob_to_types" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes types probabilities as returned by <a class="reference internal" href="#aquaduct.geom.master.CTypeSpathsCollectionWorker.coords_types_prob_widths" title="aquaduct.geom.master.CTypeSpathsCollectionWorker.coords_types_prob_widths"><code class="xref py py-meth docutils literal notranslate"><span class="pre">CTypeSpathsCollectionWorker.coords_types_prob_widths()</span></code></a> to types.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>types_prob</strong> (<em>list</em>) – List of types probabilities.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>List of <code class="xref py py-class docutils literal notranslate"><span class="pre">GenericPathTypeCodes</span></code>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="aquaduct.geom.master.CTypeSpathsCollection.get_master_path">
+<code class="sig-name descname">get_master_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">smooth</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">resid</span><span class="o">=</span><span class="default_value">0, 0</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/aquaduct/geom/master.html#CTypeSpathsCollection.get_master_path"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#aquaduct.geom.master.CTypeSpathsCollection.get_master_path" title="Permalink to this definition">¶</a></dt>
+<dd><p id="master-path-generation">Averages spaths into one master path.</p>
+<p>This is done in steps:</p>
+<ol class="arabic simple">
+<li><p>Master path is an average of bunch of spaths. Its length is determined by <a class="reference internal" href="#aquaduct.geom.master.CTypeSpathsCollection.full_size" title="aquaduct.geom.master.CTypeSpathsCollection.full_size"><code class="xref py py-meth docutils literal notranslate"><span class="pre">full_size()</span></code></a> method.</p></li>
+<li><p>All spaths are then divided in to chunks according to <code class="xref py py-func docutils literal notranslate"><span class="pre">xzip_xzip()</span></code> function with <code class="xref py py-attr docutils literal notranslate"><span class="pre">N</span></code> set to lenght of master path. This results in list of length equal to the length of master path. Elements of this lists are slice objects that can be used to slice spaths in appropriate chunks.</p></li>
+<li><p>Next, for each element of this list <a class="reference internal" href="#aquaduct.geom.master.CTypeSpathsCollectionWorker.coords_types_prob_widths" title="aquaduct.geom.master.CTypeSpathsCollectionWorker.coords_types_prob_widths"><code class="xref py py-meth docutils literal notranslate"><span class="pre">CTypeSpathsCollectionWorker.coords_types_prob_widths()</span></code></a> method is called. Types probabilities are changed to types wiht <a class="reference internal" href="#aquaduct.geom.master.CTypeSpathsCollection.types_prob_to_types" title="aquaduct.geom.master.CTypeSpathsCollection.types_prob_to_types"><code class="xref py py-meth docutils literal notranslate"><span class="pre">types_prob_to_types()</span></code></a>.</p></li>
+<li><p>Finally, all data are used to create appropriate <code class="xref py py-class docutils literal notranslate"><span class="pre">MasterPath</span></code>. If this fails <cite>None</cite> is returned.</p></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>smooth</strong> (<a class="reference internal" href="aquaduct.geom.smooth.html#aquaduct.geom.smooth.Smooth" title="aquaduct.geom.smooth.Smooth"><em>Smooth</em></a>) – Smoothing method.</p></li>
+<li><p><strong>resid</strong> (<a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – Residue ID of master path.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">MasterPath</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Average path as <code class="xref py py-class docutils literal notranslate"><span class="pre">MasterPath</span></code> object or <cite>None</cite> if creation of master path failed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/AQUADUCT_LOGO.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="aquaduct.geom.hdr_contour.html"
+                        title="previous chapter">aquaduct.geom.hdr_contour module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="aquaduct.geom.pca.html"
+                        title="next chapter">aquaduct.geom.pca module</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.geom.pca.html" title="aquaduct.geom.pca module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="aquaduct.geom.hdr_contour.html" title="aquaduct.geom.hdr_contour module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Aqua-Duct 1.0.10 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >aquaduct</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="aquaduct.html" >aquaduct package</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="aquaduct.geom.html" >aquaduct.geom package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">aquaduct.geom.master module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, 2017, 2018, 2019 Tomasz Magdziarz, Karolina Mitusińska, Agata Raczyńska, Artur Góra.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>
